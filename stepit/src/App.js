@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
+import Layout from "./page/layout";
+import Homepage from './page/homepage'
+import Audacity from './page/audacity/audacity'
+import Tinkercad from './page/tinkercad/tinkercad'
+import NoPage from "./page/nopage";
+import audacity_lekce1 from './page/audacity/audacity1';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Homepage />} />
+          <Route path="audacity" element={<Audacity />} />
+          <Route path="tinkercad" element={<Tinkercad />} />
+          <Route path="audacity_lekce1" element={<audacity_lekce1 />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
