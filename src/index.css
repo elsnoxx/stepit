@@ -1,10 +1,118 @@
+/* ---------------------------------------------------------------------------- */
+/* Pouzite pro vycentrovani textu a udelani responzivniho */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: auto;
+  max-width: 960px; /* Případně upravte maximální šířku podle potřeby */
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; /* Šířka pro 'sm' (small) obrazovky a větší */
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; /* Šířka pro 'md' (medium) obrazovky a větší */
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; /* Šířka pro 'lg' (large) obrazovky a větší */
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; /* Šířka pro 'xl' (extra large) obrazovky */
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1540px; /* Šířka pro 'xl' (extra large) obrazovky */
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1740px; /* Šířka pro 'xl' (extra large) obrazovky */
+  }
+}
+/* ---------------------------------------------------------------------------- */
+/* Odstraneni klasickeho formatovani odkazu */
+.MyLink {
+  text-decoration: none; /* Odstranění podtržení */
+  outline: none; /* Odstranění ohraničení */
+  color: inherit; /* Ponechání barvy textu dědičné od rodičovského elementu */
+}
+
+/* Případně můžete také explicitně nastavit barvu odkazu, např. na černou */
+.MyLink {
+  color: black; /* Nastavení barvy textu odkazu na černou */
+}
+/* ---------------------------------------------------------------------------- */
+/* Footer */
+.footer-container {
+  background-color: rgba(0, 0, 0, 0.025);
+  text-align: center;
+  padding: 10px; /* Přidání polštáře pro lepší vizuální efekt */
+  margin-top: auto;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* General formating */
+h1,
+h2,
+h3,
+h6 {
+  color: #000000;
+  font-family: Arial;
+  font-weight: bold;
+  margin-bottom: 32px;
+  text-decoration: underline;
+  font-weight: bolder ;
+}
+/* ---------------------------------------------------------------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 code {
