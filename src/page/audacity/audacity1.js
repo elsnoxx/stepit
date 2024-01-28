@@ -1,9 +1,19 @@
-// AboutPage.js
-import React from 'react';
+import React, { useEffect } from 'react';
+import LessonHeader from '../general/LessonNavigation'
+import './audacity.css';
+
 
 const AudacityLekce1 = () => {
+  // Efekt se spustí pouze při prvním načtení komponenty
+  useEffect(() => {
+    document.title = 'Audacity Lekce 1';
+  }, []); 
+
+  const beforeLesson = '/audacity';
+  const afterLesson = '/audacity/audacity2';
   return (
     <main role="main" className="container">
+      <LessonHeader beforeLesson={beforeLesson} afterLesson={afterLesson} />
       <div className='content'>
       <div>
         <table>
@@ -239,7 +249,7 @@ const AudacityLekce1 = () => {
           soubor a nebo vyplnit metadata návod naleznete <a href="/lessons/audacity/audacity1.html#metadata">zde</a>.
         </p>
         <h5>Požadavky</h5>
-        <ul>
+        <ul className='textBolder'>
           <li>
             Při ukládání a vytváření mp3 souboru uložte do metadat nasledující:
             <ul>
