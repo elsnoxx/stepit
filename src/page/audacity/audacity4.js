@@ -3,10 +3,12 @@ import React from 'react';
 
 const AudacityLekce4 = () => {
   return (
-    <div>
+    <main role="main" className="container">
+      <div className='content'>
       <h2>lekce 4 audacity</h2>
       <p>tohle bude lekce 4 audacity</p>
-    </div>
+      </div>
+    </main>
   );
 }
 

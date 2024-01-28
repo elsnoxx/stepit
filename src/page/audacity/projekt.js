@@ -3,10 +3,12 @@ import React from 'react';
 
 const AudacityProjekt = () => {
   return (
-    <div>
+    <main role="main" className="container">
+      <div className='content'>
       <h2>Projekt audacity</h2>
       <p>tohle bude projekt audacity</p>
-    </div>
+      </div>
+    </main>
   );
 }
 

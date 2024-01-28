@@ -3,7 +3,8 @@ import React from 'react';
 
 const AudacityLekce1 = () => {
   return (
-    <div>
+    <main role="main" className="container">
+      <div className='content'>
       <div>
         <table>
           <tbody>
@@ -261,7 +262,8 @@ const AudacityLekce1 = () => {
       </div>
 
 
-    </div>
+      </div>
+    </main>
   );
 }
 

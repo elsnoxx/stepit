@@ -3,7 +3,8 @@ import React from 'react';
 
 const EnvAudacity = () => {
   return (
-    <div>
+    <main role="main" className="container">
+      <div className='content'>
       <table>
         <tbody>
           <tr>
@@ -34,7 +35,8 @@ const EnvAudacity = () => {
         </p>
       </div>
 
-    </div>
+      </div>
+    </main>
   );
 }
 

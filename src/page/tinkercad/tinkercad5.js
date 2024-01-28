@@ -3,9 +3,11 @@ import React from 'react';
 
 const TinkercadLekce5 = () => {
   return (
-    <div>
+    <main role="main" className="container">
+      <div className='content'>
       <h2>Lekce 5</h2>
-    </div>
+      </div>
+    </main>
   );
 }
 

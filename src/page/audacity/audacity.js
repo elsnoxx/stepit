@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Audacity = () => {
   return (
-    <div>
+    <main role="main" className="container">
+      <div className='content'>
       <h1>Audacity</h1>
       <p>
         Pro práci na našich úkolech budeme používat nástroj <a href="https://www.audacityteam.org/">AudaCity</a>.
@@ -64,13 +65,9 @@ const Audacity = () => {
           </p>
         </ul>
 
-        <a href="/prezentace.html">
-          <h3>Prezentace</h3>
-        </a>
+        <Link to="/prezentace"><h3>Prezentace</h3></Link>
         <ul>
-          <a href="/prezentace.html">
-            <h6>Zadání prezentace</h6>
-          </a>
+        <Link to="/prezentace"><h6>Prezentace</h6></Link>
           <p>
             V dalších lekcích budete vypracovávat závěrečný projekt a prezentaci k němu. Veškeré materiály dostanete na
             lekci.
@@ -79,19 +76,17 @@ const Audacity = () => {
           </p>
         </ul>
 
-        <a href="/lessons/audacity/hodnoceni.html">
-          <h3>Hodnocení lekce</h3>
-        </a>
+
+        <Link to="/audacity/hodnoceni"><h3>Hodnocení lekce</h3></Link>
         <ul>
           <p>
             Prosím ohodnoťte lekci v níže přidaném formuláři.
           </p>
-          <a href="/lessons/audacity/hodnoceni.html">
-            <h6>Formulář hodnocení</h6>
-          </a>
+          <Link to="/audacity/hodnoceni"><h6>Hodnocení lekce</h6></Link>
         </ul>
       </div>
-    </div>
+      </div>
+    </main>
   );
 }
 

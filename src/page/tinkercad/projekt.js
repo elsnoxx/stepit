@@ -3,10 +3,12 @@ import React from 'react';
 
 const TinkercadProjekt = () => {
   return (
-    <div>
+    <main role="main" className="container">
+      <div className='content'>
       <h2>Tinkercad Projekt</h2>
       
-    </div>
+      </div>
+    </main>
   );
 }
 

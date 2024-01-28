@@ -3,7 +3,8 @@ import React from 'react';
 
 const AudacityLekce2 = () => {
   return (
-    <div>
+    <main role="main" className="container">
+      <div className='content'>
       <div className="odstavec">
         <table>
           <tr>
@@ -124,7 +125,8 @@ const AudacityLekce2 = () => {
         {/* <a href="https://drive.google.com/drive/folders/1az3Tovyw9RDTD2SkVkRN_esBo4nZaUbp?usp=sharing">odevzdat<a> */}
       </div>
 
-    </div>
+      </div>
+    </main>
   );
 }
 
