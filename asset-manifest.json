@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/elsnoxx.github.io/stepit/static/css/main.a661cb82.css",
-    "main.js": "/elsnoxx.github.io/stepit/static/js/main.783aff56.js",
-    "static/js/787.7b5164df.chunk.js": "/elsnoxx.github.io/stepit/static/js/787.7b5164df.chunk.js",
-    "index.html": "/elsnoxx.github.io/stepit/index.html",
-    "main.a661cb82.css.map": "/elsnoxx.github.io/stepit/static/css/main.a661cb82.css.map",
-    "main.783aff56.js.map": "/elsnoxx.github.io/stepit/static/js/main.783aff56.js.map",
-    "787.7b5164df.chunk.js.map": "/elsnoxx.github.io/stepit/static/js/787.7b5164df.chunk.js.map"
+    "main.css": "/stepit/static/css/main.a661cb82.css",
+    "main.js": "/stepit/static/js/main.bbf8b89c.js",
+    "static/js/787.7b5164df.chunk.js": "/stepit/static/js/787.7b5164df.chunk.js",
+    "index.html": "/stepit/index.html",
+    "main.a661cb82.css.map": "/stepit/static/css/main.a661cb82.css.map",
+    "main.bbf8b89c.js.map": "/stepit/static/js/main.bbf8b89c.js.map",
+    "787.7b5164df.chunk.js.map": "/stepit/static/js/787.7b5164df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a661cb82.css",
-    "static/js/main.783aff56.js"
+    "static/js/main.bbf8b89c.js"
   ]
 }
