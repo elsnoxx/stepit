@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
-import LessonHeader from '../general/LessonNavigation'
+import LessonHeader from '../general/LessonNavigation';
+import DownloadButton from '../general/download';
+import AudioPlayer from '../general/AudioPlayer';
+import ImageViewer from '../general/ImageViewer';
 import './audacity.css';
 
 
@@ -20,8 +23,7 @@ const AudacityLekce1 = () => {
           <tbody>
             <tr>
               <td>
-                {/* <img src="/img/audacity/logo.avif" alt="Prostředí pro upravu zvuku"
-              style="width:100%; max-width:100px; height: auto" loading="lazy"> */}
+              <ImageViewer imageUrl={"/img/audacity/logo.avif"} altText={"Prostředí pro upravu zvuku"} />
               </td>
               <td>
                 <h1>Lekce 1 - Úvod, prostředí Audacity, první zvuková nahrávka
@@ -56,8 +58,7 @@ const AudacityLekce1 = () => {
                   </p>
                 </td>
                 <td>
-                  {/* <img className="myImg" src="/img/audacity/lekce1/sample-rate.avif" alt="Prostředí pro upravu zvuku"
-                style="width:100%; max-width:3000px; height: auto" loading="lazy"> */}
+                <ImageViewer imageUrl={"/img/audacity/lekce1/sample-rate.avif"} altText={"Prostředí pro upravu zvuku"} />
                 </td>
               </tr>
             </tbody>
@@ -93,8 +94,7 @@ const AudacityLekce1 = () => {
                   </p>
                 </td>
                 <td>
-                  {/* <img className="myImg" src="/img/audacity/lekce1/sample-rate.avif" alt="Prostředí pro upravu zvuku"
-                style="width:100%; max-width:3000px; height: auto" loading="lazy"> */}
+                <ImageViewer imageUrl={"/img/audacity/lekce1/sample-rate.avif"} altText={"Prostředí pro upravu zvuku"} />
                 </td>
               </tr>
             </tbody>
@@ -120,8 +120,7 @@ const AudacityLekce1 = () => {
                   </p>
                 </td>
                 <td>
-                  {/* <img className="myImg" src="/img/audacity/lekce1/vysoka-frekvence.avif" alt="Prostředí pro upravu zvuku"
-                style="width:100%; max-width:3000px; height: auto" loading="lazy"> */}
+                <ImageViewer imageUrl={"/img/audacity/lekce1/vysoka-frekvence.avif"} altText={"Prostředí pro upravu zvuku"} />
                 </td>
               </tr>
             </tbody>
@@ -140,8 +139,7 @@ const AudacityLekce1 = () => {
                   </p>
                 </td>
                 <td>
-                  {/* <img className="myImg" src="/img/audacity/lekce1/nizka-frekvence.avif" alt="Prostředí pro upravu zvuku"
-                style="width:100%; max-width:3000px; height: auto" loading="lazy"> */}
+                <ImageViewer imageUrl={"/img/audacity/lekce1/nizka-frekvence.avif"} altText={"Prostředí pro upravu zvuku"} />
                 </td>
               </tr>
             </tbody>
@@ -165,8 +163,7 @@ const AudacityLekce1 = () => {
                 </p>
               </td>
               <td>
-                {/* <img className="myImg" src="/img/audacity/env.avif" alt="Prostředí pro upravu zvuku"
-              style="width:100%; max-width:3000px; height: auto" loading="lazy"> */}
+              <ImageViewer imageUrl={"/img/audacity/env.avif"} altText={"Prostředí pro upravu zvuku"} />
               </td>
             </tr>
           </tbody>
@@ -184,8 +181,7 @@ const AudacityLekce1 = () => {
                 </p>
               </td>
               <td>
-                {/* <img className="myImg" src="/img/audacity/lekce1/novy-projekt.avif" alt="Prostředí pro upravu zvuku"
-              style="width:100%; max-width:3000px; height: auto" loading="lazy"> */}
+              <ImageViewer imageUrl={"/img/audacity/lekce1/novy-projekt.avif"} altText={"Prostředí pro upravu zvuku"} />
               </td>
             </tr>
           </tbody>
@@ -208,9 +204,7 @@ const AudacityLekce1 = () => {
                 </p>
               </td>
               <td>
-                {/* <img className="myImg" src="/img/audacity/lekce1/ulozeni-projektu-1.avif"
-              alt="Uložení v jiném formátu, Uložení ve formátu MP3" style="width:100%; max-width:3000px; height: auto"
-              loading="lazy"> */}
+              <ImageViewer imageUrl={"/img/audacity/lekce1/ulozeni-projektu-1.avif"} altText={"Uložení v jiném formátu, Uložení ve formátu MP3"} />
               </td>
             </tr>
             <tr>
@@ -220,8 +214,7 @@ const AudacityLekce1 = () => {
                 </p>
               </td>
               <td>
-                {/* <img className="myImg" src="/img/audacity/lekce1/ulozeni-projektu-2.avif" alt="Místo pro uložení projektu"
-              style="width:100%; max-width:3000px; height: auto" loading="lazy"> */}
+              <ImageViewer imageUrl={"/img/audacity/lekce1/ulozeni-projektu-2.avif"} altText={"Místo pro uložení projektu"} />
               </td>
             </tr>
             <tr>
@@ -233,8 +226,7 @@ const AudacityLekce1 = () => {
                 </p>
               </td>
               <td>
-                {/* <img className="myImg" src="/img/audacity/lekce1/ulozeni-projektu-3.avif" alt="Vyplnění metadat"
-              style="width:100%; max-width:3000px; height: auto" loading="lazy"> */}
+              <ImageViewer imageUrl={"/img/audacity/lekce1/ulozeni-projektu-3.avif"} altText={"Vyplnění metadat"} />
               </td>
             </tr>
           </tbody>

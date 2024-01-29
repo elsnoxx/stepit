@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
-import LessonHeader from '../general/LessonNavigation'
+import LessonHeader from '../general/LessonNavigation';
+import DownloadButton from '../general/download';
+import AudioPlayer from '../general/AudioPlayer';
+import ImageViewer from '../general/ImageViewer';
 import './audacity.css';
 
 
@@ -7,7 +10,7 @@ const AudacityLekce2 = () => {
   // Efekt se spustí pouze při prvním načtení komponenty
   useEffect(() => {
     document.title = 'Audacity Lekce 2';
-  }, []); 
+  }, []);
 
   const beforeLesson = '/audacity/audacity1';
   const afterLesson = '/audacity/audacity3';
@@ -29,7 +32,7 @@ const AudacityLekce2 = () => {
             </tbody>
           </table>
 
-          <p style={{ marginBottom: '64px' }}>
+          <p>
             Pro práci na našich úkolů budeme používat nástroj <a href="https://www.audacityteam.org/">AudaCity</a>.
             Návod na zprovoznění najdete <a href="/lessons/audacity/env.html">zde</a>.
           </p>
@@ -49,8 +52,7 @@ const AudacityLekce2 = () => {
                   Ukážeme si funkci <strong>normalizace</strong>, tu najdete v záložce
                   <strong>effect</strong>. Slouží nám k zvýšení hlasitosti všech vrcholů v naši nahrávce.
                 </li>
-                <br />
-                {/* <img className="myImg" src="/img/audacity/lekce2/normalizace.avif" alt="Okno normalizace Audacity" style="width:100%; max-width:100px; height: auto" loading="lazy"> */}
+                <ImageViewer imageUrl={"/img/audacity/lekce2/normalizace.avif"} altText={"Okno normalizace Audacity"} />
               </ul>
             </li>
             <li>
@@ -62,8 +64,8 @@ const AudacityLekce2 = () => {
                   Kterou najdete taky v záložce <strong>effect</strong>. Tu používáme hlavně proto, abychom
                   omezili nejvyšší tóny a dorovnali jsme zvuk po celé nahrávce.
                 </li>
-                <br />
-                {/* <img src="/img/audacity/lekce2/limiter.avif" alt="Okno limiter Audacity" style="width:100%; max-width:100px; height: auto" loading="lazy"> */}
+
+                <ImageViewer imageUrl={"/img/audacity/lekce2/limiter.avif"} altText={"Okno limiter Audacity"} />
               </ul>
             </li>
             <li>
@@ -73,8 +75,8 @@ const AudacityLekce2 = () => {
                   Tenhle efekt se používá pokud chceme vytvořit na nahrávce postupný náběh.
                   Takže bychom šli z ticha aŽ do plné hlasitosti.
                 </li>
-                <br />
-                {/* <img src="/img/audacity/lekce2/fadein.avif" alt="Okno fade in Audacity" style="width:100%; max-width:100px; height: auto" loading="lazy"> */}
+
+                <ImageViewer imageUrl={"/img/audacity/lekce2/fadein.avif"} altText={"Okno fade in Audacity"} />
               </ul>
             </li>
             <li>
@@ -84,8 +86,8 @@ const AudacityLekce2 = () => {
                   Tenhle efekt se používá pokud chceme vytvořit na nahrávce postupné zeslabení.
                   Takže bychom šli z plné hlasitosti do ticha.
                 </li>
-                <br />
-                {/* <img src="/img/audacity/lekce2/fadeout.avif" alt="Okno fade out Audacity" style="width:100%; max-width:100px; height: auto" loading="lazy"> */}
+
+                <ImageViewer imageUrl={"/img/audacity/lekce2/fadeout.avif"} altText={"Okno fade out Audacity"} />
               </ul>
             </li>
             <li>
@@ -96,7 +98,7 @@ const AudacityLekce2 = () => {
                   je hlídaná ochranou přebuzení. Ta se dá ovšem vypnout, ale to nam vsak písničku jen zhorší.
                 </li>
                 <br />
-                {/* <img src="/img/audacity/lekce2/zesileni.avif" alt="Okno fade out Audacity" style="width:100%; max-width:100px; height: auto" loading="lazy"> */}
+                <ImageViewer imageUrl={"/img/audacity/lekce2/zesileni.avif"} altText={"Okno fade out Audacity"} />
               </ul>
             </li>
           </ul>
@@ -110,7 +112,7 @@ const AudacityLekce2 = () => {
             soubor a nebo vyplnit metadata návod naleznete <a href="/lessons/audacity/audacity1.html#metadata">zde</a>.
           </p>
           <h5>Obsah podcastu:</h5>
-          <ul  className='textBolder'>
+          <ul className='textBolder'>
             <li>intro - úvodní znělka</li>
             <li>sponzora - krátký vstup kdo je sponzorem podcastu</li>
             <li>outro - ukončovací znělka</li>

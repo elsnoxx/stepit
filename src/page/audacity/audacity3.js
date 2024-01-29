@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import LessonHeader from '../general/LessonNavigation';
+import DownloadButton from '../general/download';
+import AudioPlayer from '../general/AudioPlayer';
+import ImageViewer from '../general/ImageViewer';
 import './audacity.css';
+
 
 const AudacityLekce3 = () => {
   useEffect(() => {
@@ -20,8 +24,7 @@ const AudacityLekce3 = () => {
             <tbody>
               <tr>
                 <td>
-                  {/* <img src="/img/audacity/logo.avif" alt="Prostředí pro upravu zvuku"
-                  style="width:100%; max-width:100px; height: auto" loading="lazy"> */}
+                  <ImageViewer imageUrl={"/img/audacity/logo.avif"} altText={"Prostředí pro upravu zvuku"} />
                 </td>
                 <td>
                   <h1>Lekce 3 - Šum a Remix</h1>
@@ -81,8 +84,7 @@ const AudacityLekce3 = () => {
                   </ul>
                 </td>
                 <td>
-                  {/* <img className="myImg" src="/img/audacity/lekce3/spectogram.avif" alt="Prostředí pro upravu zvuku"
-                  style="width:100%; max-width:100px; height: auto" loading="lazy"> */}
+                  <ImageViewer imageUrl={"/img/audacity/lekce3/spectogram.avif"} altText={"Prostředí pro upravu zvuku"} />
                 </td>
               </tr>
             </tbody>
@@ -97,24 +99,15 @@ const AudacityLekce3 = () => {
           <ul>
             <li>
               <h5>Bílí šum</h5>
-              {/* <audio controls>
-                <source src="/lessons/audacity/music/bili.mp3" type="audio/mpeg">
-                  Bili sum
-              </audio> */}
+              <AudioPlayer audioUrl={"/zadani/audacity/songs/bili.mp3"} title={"Bili sum"} />
             </li>
             <li>
               <h5>Růžový šum</h5>
-              {/* <audio controls>
-                <source src="/lessons/audacity/music/ruzovy.mp3" type="audio/mpeg">
-                  Ruzovy sum
-              </audio> */}
+              <AudioPlayer audioUrl={"/zadani/audacity/songs/ruzovy.mp3"} title={"Ruzovy sum"} />
             </li>
             <li>
               <h5>Brownův šum</h5>
-              {/* <audio controls>
-                <source src="/lessons/audacity/music/brownuv.mp3" type="audio/mpeg">
-                  Brownuv sum
-              </audio> */}
+              <AudioPlayer audioUrl={"/zadani/audacity/songs/brownuv.mp3"} title={"Brownuv sum"} />
             </li>
           </ul>
         </div>
@@ -128,7 +121,7 @@ const AudacityLekce3 = () => {
           </p>
           <h5>Obsah puzzle:</h5>
           <ul className='textBolder'>
-            <li>aspoň 3 hádánek</li>
+            <li>aspoň 3 hádánky</li>
             <li>odsranění šumu</li>
             <li>sestříháné a přidané pauzy mezi zvuky</li>
             <li>připravé a spárvé odpovědi</li>
