@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import LessonHeader from '../general/LessonNavigation'
+import LessonHeader from '../general/LessonNavigation';
+import DownloadButton from '../general/download';
 import './audacity.css';
 
 
@@ -11,6 +12,8 @@ const AudacityLekce4 = () => {
 
   const beforeLesson = '/audacity/audacity3';
   const afterLesson = '/audacity/projekt';
+
+  const imageUrl = 
   return (
     <main role="main" className="container">
       <LessonHeader beforeLesson={beforeLesson} afterLesson={afterLesson} />
@@ -21,6 +24,7 @@ const AudacityLekce4 = () => {
               <td>
                 {/* <img src="/img/audacity/logo.avif" alt="Prostředí pro upravu zvuku"
                   style="width:100%; max-width:100px; height: auto" loading="lazy"> */}
+                  <ImageViewer imageUrl={imageUrl} altText={altText} />
               </td>
               <td>
                 <h1>Lekce 4 - Opakování, zadání projektu a vypracovávání
@@ -100,7 +104,7 @@ const AudacityLekce4 = () => {
             Vžijte se do role DJ. A zkuste namixovat nějaký pořádný <strong>Track</strong>. Pokud si nejste jisti jak uložit
             soubor a nebo vyplnit metadata návod naleznete <a href="/lessons/audacity/audacity1.html#metadata">zde</a>.
           </p>
-          <h5>Skladba ke stažení <a href="/download/audacity/songs/baiana.mp3" download>zde</a></h5>
+          <h5><DownloadButton fileUrl="/zadani/audacity/songs/baiana.mp3" buttonText="Skladba ke stažení"/></h5>
           <h5>Obsah:</h5>
           <ul className='textBolder'>
             <li>3 písničky</li>
