@@ -1,11 +1,23 @@
 # TODO list
 
-- Audacity
-    - obrazky u lekci
-    - zvuk u lekce 3
-    - pridat ke stazenijednotlive ukoly nebo projekty
-
 - TinkerCAD
     - obsah lekci
     - obsah projektu
     - obrazky
+    - vytvorit komponentu pro odkazy na prihlaseni do trid
+
+
+## Dulezite komponenty
+
+    ``` javascript
+
+        <ImageViewer imageUrl={"/img/tinkerCAD/tinkerCAD-login.avif"} altText={"Přihlášení do TinkerCADu"} />
+    ```
+
+    ``` javascript
+
+    const beforeLesson = '/audacity';
+    const afterLesson = '/audacity/audacity2';
+
+    <LessonHeader beforeLesson={beforeLesson} afterLesson={afterLesson} />
+    ```
