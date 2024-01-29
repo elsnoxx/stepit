@@ -9,11 +9,12 @@ import './audacity.css';
 const AudacityLekce4 = () => {
   // Efekt se spustí pouze při prvním načtení komponenty
   useEffect(() => {
-    document.title = 'Audacity Lekce 3';
+    document.title = 'Audacity Lekce 4';
   }, []); 
 
   const beforeLesson = '/audacity/lekce3';
   const afterLesson = '/audacity/projekt';
+
 
 
   return (
