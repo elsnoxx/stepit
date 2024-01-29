@@ -1,5 +1,6 @@
 // AboutPage.js
 import React from 'react';
+import DownloadButton from '../general/download';
 
 const EndPresentation = () => {
   return (
@@ -91,13 +92,12 @@ const EndPresentation = () => {
                   <h5>Zadání prezentace</h5>
                 </td>
                 <td>
-                  <button onClick='download("/download/prezentace.pdf")'>
-                    stažení</button>
+                    <DownloadButton fileUrl="/zadani/prezentace.pdf" buttonText="Stažení PDF" requiresPassword/>
                 </td>
               </tr>
             </tbody>
           </table>
-          <h5><a href="/download/pdfobraze.png" download>Cover</a></h5>
+          <DownloadButton fileUrl="/zadani/pdfobraze.png" buttonText="Cover PDF"/>
         </div>
       </div>
     </main>
