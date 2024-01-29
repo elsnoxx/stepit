@@ -41,10 +41,10 @@ export default function App() {
           <Route index element={<Homepage />} />
           {/* Audacity pages */}
           <Route path="audacity" element={<Audacity />} />
-          <Route path="audacity/audacity1" element={<AudacityLekce1 />} />
-          <Route path="audacity/audacity2" element={<AudacityLekce2 />} />
-          <Route path="audacity/audacity3" element={<AudacityLekce3 />} />
-          <Route path="audacity/audacity4" element={<AudacityLekce4 />} />
+          <Route path="audacity/lekce1" element={<AudacityLekce1 />} />
+          <Route path="audacity/lekce2" element={<AudacityLekce2 />} />
+          <Route path="audacity/lekce3" element={<AudacityLekce3 />} />
+          <Route path="audacity/lekce4" element={<AudacityLekce4 />} />
           <Route path="audacity/env" element={<EnvAudacity />} />
           <Route path="audacity/projekt" element={<AudacityProjekt />} />
           <Route path="audacity/hodnoceni" element={<AudacityHodnoceni />} />
