@@ -1,8 +1,10 @@
-// AboutPage.js
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 const Tinkercad = () => {
+  useEffect(() => {
+    document.title = 'TinkerCAD Hodnoceni';
+  }, []); 
   return (
     <main role="main" className="container">
       <div className='content'>

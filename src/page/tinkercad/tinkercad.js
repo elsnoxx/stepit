@@ -1,9 +1,12 @@
-// AboutPage.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import './tinkercad.css';
 import { Link } from 'react-router-dom';
+import ClassLogin from './classes';
 
 const Tinkercad = () => {
+  useEffect(() => {
+    document.title = 'TinkerCAD';
+  }, []); 
   return (
     <main role="main" className="container">
       <div className='content'>
@@ -17,16 +20,8 @@ const Tinkercad = () => {
           </p>
         </div>
 
+        <ClassLogin></ClassLogin>
 
-        <div className="odstavec">
-          <h5>
-            <strong>Link pro přihlášení do naší TinkerCad třídy:</strong>
-          </h5>
-          <ul>
-            <li><a className href="https://www.tinkercad.com/joinclassName/3QY3173UJ">JA-MON-O-3-23</a></li>
-            <li><a className href="https://www.tinkercad.com/joinclassName/RKEWPZBPC">JA-TH-O-10-23</a></li>
-          </ul>
-        </div>
 
         <h5 >
           <strong>Pokud si nejse jisti jak odevzdat domácí úlohu, <Link to="/tinkercad/ukol" className='MyLink'>zde</Link>  návod jak na to</strong>
