@@ -1,7 +1,9 @@
 // AboutPage.js
 import React from 'react';
+import DownloadButton from '../general/download';
 
 const AudacityProjekt = () => {
+
   return (
     <main role="main" className="container">
       <div className='content'>
@@ -62,12 +64,11 @@ const AudacityProjekt = () => {
                 <h5>Zadání projektu</h5>
               </td>
               <td>
-                <button onClick='download("/download/audacity/projekt-radio.pdf")'>
-                  stažení</button>
+                  <DownloadButton fileUrl="/zadani/audacity/projekt-radio.pdf" buttonText="Stažení PDF" requiresPassword/>
               </td>
             </tr>
           </table>
-          <h5><a href="/download/pdfobraze.png" download>Cover</a></h5>
+          <DownloadButton fileUrl="/zadani/pdfobraze.png" buttonText="Cover PDF"/>
         </div>
 
         <div className="odstavec">
@@ -105,12 +106,11 @@ const AudacityProjekt = () => {
                 <h5>Zadání projektu</h5>
               </td>
               <td>
-                <button onClick='download("/download/audacity/projekt-koláž.pdf")'>
-                  stažení</button>
+                  <DownloadButton fileUrl="/zadani/audacity/projekt-koláž.pdf" buttonText="Stažení PDF" requiresPassword/>
               </td>
             </tr>
           </table>
-          <h5><a href="/download/pdfobraze.png" download>Cover</a></h5>
+          <DownloadButton fileUrl="/zadani/pdfobraze.png" buttonText="Cover PDF"/>
         </div>
       </div>
     </main>
