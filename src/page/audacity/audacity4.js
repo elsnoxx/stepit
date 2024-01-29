@@ -12,7 +12,7 @@ const AudacityLekce4 = () => {
     document.title = 'Audacity Lekce 3';
   }, []); 
 
-  const beforeLesson = '/audacity/audacity3';
+  const beforeLesson = '/audacity/lekce3';
   const afterLesson = '/audacity/projekt';
 
 

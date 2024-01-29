@@ -13,7 +13,7 @@ const AudacityLekce1 = () => {
   }, []); 
 
   const beforeLesson = '/audacity';
-  const afterLesson = '/audacity/audacity2';
+  const afterLesson = '/audacity/lekce2';
   return (
     <main role="main" className="container">
       <LessonHeader beforeLesson={beforeLesson} afterLesson={afterLesson} />

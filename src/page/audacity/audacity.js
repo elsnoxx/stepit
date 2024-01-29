@@ -13,9 +13,9 @@ const Audacity = () => {
       </p>
 
       <div>
-        <Link to="/audacity/audacity1"><h3>Lekce 1</h3></Link>
+        <Link to="/audacity/lekce1"><h3>Lekce 1</h3></Link>
         <ul>
-          <Link to="/audacity/audacity1"><h6>Obsah lekce - Úvod, prostředí Audacity, první zvuková nahrávka</h6></Link>
+          <Link to="/audacity/lekce1"><h6>Obsah lekce - Úvod, prostředí Audacity, první zvuková nahrávka</h6></Link>
           <p>
             Pro práci na našich úkolů budeme používat nástroj <a href="https://www.audacityteam.org/">AudaCity</a>.
             Návod na zprovoznění najdete <a href="/lessons/audacity/env.html">zde</a>.
@@ -27,27 +27,27 @@ const Audacity = () => {
           </p>
         </ul>
 
-        <Link to="/audacity/audacity2"><h3>Lekce 2</h3></Link>
+        <Link to="/audacity/lekce2"><h3>Lekce 2</h3></Link>
         <ul>
-          <Link to="/audacity/audacity2"><h6>Obsah lekce - Efekty a podcast</h6></Link>
+          <Link to="/audacity/lekce2"><h6>Obsah lekce - Efekty a podcast</h6></Link>
           <p>
             V dnešní lekci si zopakujeme co jsme se doposud naučili.
             Zadáme si projket a také prezentaci. Tohle vše pak nas čeká ještě odprezentovat rodičům.
           </p>
         </ul>
 
-        <Link to="/audacity/audacity3"><h3>Lekce 3</h3></Link>
+        <Link to="/audacity/lekce3"><h3>Lekce 3</h3></Link>
         <ul>
-          <Link to="/audacity/audacity3"><h6>Obsah lekce - Šum a Remix </h6></Link>
+          <Link to="/audacity/lekce3"><h6>Obsah lekce - Šum a Remix </h6></Link>
           <p>
             V dnešní lekci si zopakujeme co jsme se doposud naučili.
             Zadáme si projket a také prezentaci. Tohle vše pak nas čeká ještě odprezentovat rodičům.
           </p>
         </ul>
 
-        <Link to="/audacity/audacity4"><h3>Lekce 4</h3></Link>
+        <Link to="/audacity/lekce4"><h3>Lekce 4</h3></Link>
         <ul>
-          <Link to="/audacity/audacity4"><h6>Obsah lekce - Opakování, zadání projektu a vypracovávání prezentace</h6></Link>
+          <Link to="/audacity/lekce4"><h6>Obsah lekce - Opakování, zadání projektu a vypracovávání prezentace</h6></Link>
           <p>
             V dnešní lekci si zopakujeme co jsme se doposud naučili.
             Zadáme si projket a také prezentaci. Tohle vše pak nas čeká ještě odprezentovat rodičům.

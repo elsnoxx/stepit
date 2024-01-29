@@ -12,8 +12,8 @@ const AudacityLekce2 = () => {
     document.title = 'Audacity Lekce 2';
   }, []);
 
-  const beforeLesson = '/audacity/audacity1';
-  const afterLesson = '/audacity/audacity3';
+  const beforeLesson = '/audacity/lekce1';
+  const afterLesson = '/audacity/lekce3';
   return (
     <main role="main" className="container">
       <div className='content'>

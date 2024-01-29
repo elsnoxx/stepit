@@ -10,8 +10,8 @@ const AudacityLekce3 = () => {
   useEffect(() => {
     document.title = 'Audacity Lekce 3';
   }, []); 
-  const beforeLesson = '/audacity/audacity2';
-  const afterLesson = '/audacity/audacity4';
+  const beforeLesson = '/audacity/lekce2';
+  const afterLesson = '/audacity/lekce4';
 
   return (
     <main role="main" className="container">
