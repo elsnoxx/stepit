@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.a661cb82.css",
-    "main.js": "/static/js/main.fba316c3.js",
-    "static/js/787.7b5164df.chunk.js": "/static/js/787.7b5164df.chunk.js",
-    "index.html": "/index.html",
-    "main.a661cb82.css.map": "/static/css/main.a661cb82.css.map",
-    "main.fba316c3.js.map": "/static/js/main.fba316c3.js.map",
-    "787.7b5164df.chunk.js.map": "/static/js/787.7b5164df.chunk.js.map"
+    "main.css": "/elsnoxx.github.io/stepit/static/css/main.a661cb82.css",
+    "main.js": "/elsnoxx.github.io/stepit/static/js/main.783aff56.js",
+    "static/js/787.7b5164df.chunk.js": "/elsnoxx.github.io/stepit/static/js/787.7b5164df.chunk.js",
+    "index.html": "/elsnoxx.github.io/stepit/index.html",
+    "main.a661cb82.css.map": "/elsnoxx.github.io/stepit/static/css/main.a661cb82.css.map",
+    "main.783aff56.js.map": "/elsnoxx.github.io/stepit/static/js/main.783aff56.js.map",
+    "787.7b5164df.chunk.js.map": "/elsnoxx.github.io/stepit/static/js/787.7b5164df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a661cb82.css",
-    "static/js/main.fba316c3.js"
+    "static/js/main.783aff56.js"
   ]
 }
