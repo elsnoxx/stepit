@@ -26,5 +26,6 @@
 # Github pages
 - npm install gh-pages --save-dev
 - add in package.json in scripts 
+
 "predeploy" : "npm run build",
 "deploy" : "gh-pages -d build"

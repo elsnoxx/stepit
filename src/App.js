@@ -39,6 +39,7 @@ export default function App() {
       <Routes>
         <Route>
           <Route index element={<Homepage />} />
+          <Route path="stepit" element={<Homepage />} />
           {/* Audacity pages */}
           <Route path="audacity" element={<Audacity />} />
           <Route path="audacity/lekce1" element={<AudacityLekce1 />} />
