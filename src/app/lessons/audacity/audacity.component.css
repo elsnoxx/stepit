@@ -1,0 +1,22 @@
+/* src/app/lessons/audacity/audacity.component.css */
+.odstavec {
+    margin-bottom: 64px;
+  }
+  
+  h1, h3, h6 {
+    margin-bottom: 32px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul a {
+    text-decoration: none;
+  }
+  
+  ul p {
+    margin-bottom: 32px;
+  }
+  

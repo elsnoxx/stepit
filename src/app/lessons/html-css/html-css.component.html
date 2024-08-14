@@ -1,0 +1,131 @@
+<h1 class="mt-5" style="margin-bottom: 64px; ">HTML a CSS</h1>
+<p style="margin-bottom: 64px; ">
+    Pro vytváření našich projeků budeme používat vývojové prostředí
+    <a href="https://code.visualstudio.com/download">Visual Studio Code</a>.
+    Návod navytvoření si vyvojového prostředí <a href="/lessons/html-css/html-css-vsc.html">zde</a>.
+</p>
+
+<p>
+    Pokud bude te chtít dozvědět se něco navíc a pracovat sami na sebe. Jelikož na lekci nejsme
+    schopni probrat vše co se týče HTML a CSS a něco o psaní webu. Tak se koukněte na stránky
+    <a href="https://www.jakpsatweb.cz/">jakpsatweb.cz</a>, kde najdete kupu rad a typů jak
+    by jste měli takový web vytvořit.
+</p>
+
+<section class="odstavec">
+    <h4>Ukázkové práce</h4>
+    <p>
+        Níže budou ke stažení ukázkové kódy.
+    </p>
+    <ul>
+        <li><a href="/download/html-css/ukazky/html-css/JA-WED-O-10-22.zip" download
+                class="btn btn-primary">JA-WED-O-10-22</a></li>
+    </ul>
+</section>
+
+<div class="mid">
+
+    <!-- src/app/lessons/html-css/html-css.lessons.component.html -->
+<div class="lessons-container">
+    <div class="lesson-card" *ngFor="let lesson of lessons">
+      <a [href]="lesson.link" class="lesson-title">
+        <h3>{{ lesson.title }}</h3>
+      </a>
+      <div class="lesson-content">
+        <div class="lesson-description">
+          <p>{{ lesson.description }}</p>
+        </div>
+        <div class="lesson-action">
+          <a [href]="lesson.link" class="btn btn-primary">Přejít na lekci</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+    <section>
+        <a href="/lessons/html-css/projekt.html">
+            <h3>Projekt</h3>
+        </a>
+        <div class="row">
+            <div class="col-sm-10">
+                <p>
+                    V dalších lekcích budete vypracovávat závěrečný projekt a prezentaci k němu. Veškeré materiály
+                    dostanete
+                    na
+                    lekci.
+                    K tvorbě projektu budou i potřebné znalosti z lekcí, které jsme jič probrali.
+                    V případě nejasností se mi <a href="/contact.html">ozvete</a>.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <a href="/lessons/html-css/projekt.html" class="btn btn-primary">Projekt</a>
+            </div>
+        </div>
+    </section>
+
+
+    <a href="/prezentace.html">
+        <h3>Prezentace</h3>
+    </a>
+    <ul style="margin-bottom: 64px; ">
+        <p>
+            V dalších lekcích budete vypracovávat závěrečný projekt a prezentaci k němu. Veškeré materiály dostanete na
+            lekci.
+            K tvorbě projektu budou i potřebné znalosti z lekcí, které jsme jič probrali.
+            V případě nejasností se mi <a href="/contact">ozvete</a>.
+        </p>
+        <p>Podrobný popis <a href="/prezentace.html">zde</a>.</p>
+    </ul>
+
+
+
+    <section>
+        <a href="/lessons/html-css/hosting.html">
+            <h3>Publikování webu </h3>
+        </a>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>
+                    Zde je maláý článek, popisující co je to doména. A také jak zpřístupnit své webové stránky světu.
+                    V případě nejasností se mi <a href="/contact">ozvete</a>.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <a href="/lessons/html-css/hosting.html" class="btn btn-primary">Publikování webu</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <a href="/lessons/html-css/test-znalosti.html">
+            <h3>Otestování znalostí</h3>
+        </a>
+        <div class="row">
+            <div class="col-sm-8">
+                <p>
+                    Zde je maláý článek, popisující co je to doména. A také jak zpřístupnit své webové stránky světu.
+                    V případě nejasností se mi <a href="/contact">ozvete</a>.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <a href="/lessons/html-css/test-znalosti.html" class="btn btn-primary">Publikování webu</a>
+            </div>
+        </div>
+    </section>
+
+
+    <a href="/lessons/html-css/hodnoceni.html">
+        <h3>Hodnocení lekce</h3>
+    </a>
+    <div class="row">
+        <div class="col-sm-8">
+            <p>
+                Prosím ohodnoťte lekci v níže přidaném formuláři.
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <a href="/lessons/html-css/hodnoceni.html" class="btn btn-primary">Formulář hodnocení</a>
+        </div>
+    </div>
+</div>
