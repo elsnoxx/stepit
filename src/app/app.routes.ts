@@ -23,7 +23,7 @@ import { HtmlCssPublikovaniComponent } from './lessons/html-css/publikovani/publ
 import { HtmlCssTestZnalostiComponent } from './lessons/html-css/test-znalosti/test-znalosti.component';
 import { HtmlCssUkazkovePraceComponent } from './lessons/html-css/ukazkove-prace/ukazkove-prace.component';
 import { HtmlCssHodnoceniComponent } from './lessons/html-css/hodnoceni/hodnoceni.component';
-
+import { HtmlCssVscComponent } from './lessons/html-css/vsc/vsc.component';
 
 
 export const routes: Routes = [
@@ -51,4 +51,5 @@ export const routes: Routes = [
   { path: 'html-css/test-znalosti', component: HtmlCssTestZnalostiComponent },
   { path: 'html-css/ukazkove-prace', component: HtmlCssUkazkovePraceComponent },
   { path: 'html-css/hodnoceni', component: HtmlCssHodnoceniComponent },
+  { path: 'html-css/vsc', component: HtmlCssVscComponent },
 ];
