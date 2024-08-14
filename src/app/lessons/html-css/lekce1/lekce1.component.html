@@ -1,0 +1,625 @@
+<div>
+    <table class="moveAndTime">
+      <tr>
+        <td>
+          <button id="left" class="btn btn-primary"
+            onclick="location.href = 'audacity';">Předchozí lekce</button>
+          <button id="right" class="btn btn-primary"
+            onclick="location.href = 'audacity/lekce2';">Následují lekce</button>
+        </td>
+        <td>
+          <p class="nav-link" id="cas-text"><span id="cas"></span></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <h1>Lekce č. 1. Úvod do světa tvorby webových stránek</h1>
+  <p>
+    V této lekci si vysvětlíme malou část veliké IT oblasti. Touto oblastí je právě web.
+    Na vytvoření webových stránek můžeme použít strašnou spoustu nějakých technologii. V této
+    lekci se koukmeme právě na tu nejzákladnější a to je HTML a spolu s tím i CSS.
+  </p>
+  <p>
+    Nejprve začneme s lehkou teorii a poté si uděláme naše vývojářské prostředí.
+    Kde si bytvoříme náši první webovou stránku. Výsledkem této lekce bude vámi vytvořená první stránka.
+  </p>
+  <div class="odstavec">
+    <h1>Povolání ve vývoji</h1>
+    <p><strong>Designer</strong> &emsp; <button class="otazka" id="designer">Odpověď</button></p>
+    <div class="odpoved-designer">
+      <p>
+        Je to člověk, který vypracovává vnější vzhled
+        stránky. Obvykle se design vytváří v grafických editorech
+        (Photoshop, Illustrator a jiné). Specifikum práce designéra je ve
+        vytváření příjemného a pohodlného rozhraní pro uživatele.
+      </p>
+    </div>
+    <p><strong>Vývojář</strong> &emsp; <button class="otazka" id="vyvojar">Odpověď</button></p>
+    <div class="odpoved-vyvojar">
+      <p>
+        Je to člověk zabývající se provedením designu
+        do života. Vývojáři se mohou zabývat frontend, backendem
+        nebo všem současně.
+      </p>
+    </div>
+    <p><strong>Tester</strong> &emsp; <button class="otazka" id="tester">Odpověď</button></p>
+    <div class="odpoved-tester">
+      <p>
+        Je to člověk, který testuje funkčnost stránky. Ze
+        všech sil se snaží najít nejrůznější chyby.
+        Mohou vývojářům jednoduše poukázat na chybu.
+        Zkušenější testeři dokážou stanovit příčinu dané chyby.
+      </p>
+    </div>
+    <p><strong>SEO specialista</strong> &emsp; <button class="otazka" id="seo">Odpověď</button></p>
+    <div class="odpoved-seo">
+      <p>
+        Je to člověk, který se zabývá propagací
+        webové stránky na internetu. Většina webových stránek se
+        vytváří na komerční účely. Pro jejich produktivitu je nezbytné,
+        aby měli co největší návštěvnost. Proto je pro libovolnou
+        webovou stránku důležitým úkolem její propagace.
+        SEO specialista se zabývá reklamou stránky, nastavením
+        stránky pro vyhledávací systémy a ostatními podobnými úkoly.
+      </p>
+    </div>
+  </div>
+  
+  <section>
+    <h2>Technologické směry ve vývoji webových stránek</h2>
+    <img class="myImg" src="/img/html-css/backend-frontend.png" alt="První webová stránka"
+      style="width:100%; max-width:3000px; height: auto" loading="lazy">
+  </section>
+  
+  
+  
+  <div class="odstavec">
+    <h1>První webová stránka</h1>
+    <p><strong>Co to znamená HTML?</strong></p>
+    <ul>
+      <li>Hyper Text Markup Language neboli <strong>Hypertextový značkovací jazyk</strong></li>
+    </ul>
+  
+    <p><strong>Víte co znamená slovo Hypertext</strong></p>
+    <ul>
+      <li>
+        Je to způsob strukturování textu. Obsahuje hyper linky neboli odkazy.
+      </li>
+    </ul>
+  </div>
+  
+  
+  <div class="odstavec">
+    <h1>Základní struktura HTML dokumentu</h1>
+    <ul>
+      <li>
+        <strong> &lt;! DOCTYPE html &gt;</strong>&emsp; <button class="otazka" id="DOCTYPE">Odpověď</button>
+        <div class="odpoved-DOCTYPE">
+          <p>
+            Určuje typ dokumentu. Je to nezbytné pro to, aby prohlížeč chápal, jak má
+            interpretovat aktuální webovou stránku. Vždyť HTML existuje v
+            několika verzích.
+          </p>
+        </div>
+      </li>
+      <li>
+        <strong> &lt; html &gt;</strong>&emsp; <button class="otazka" id="html">Odpověď</button>
+        <div class="odpoved-html">
+          <p>
+            Určije začátek našeho html souboru. vněm jse uloŽeno záhlaví <strong>&lt; head &gt;</strong> a tělo
+            dokumentu <strong> &lt; body &gt;</strong>.
+          </p>
+        </div>
+      </li>
+      <li>
+        <strong> &lt; head &gt;</strong>&emsp; <button class="otazka" id="head">Odpověď</button>
+        <div class="odpoved-head">
+          <p>
+            Hlavička dokumentu, nazývaná také jako blok <code>&lt;head&gt;</code>,
+            může obsahovat text a tagy. No to, co je obsaženo v této části,
+            není zobrazeno přímo na stránce, kromě tagu <code>&lt;title&gt;</code>.
+          </p>        
+        </div>
+      </li>
+      <li>
+        <strong> &lt; meta &gt;</strong>&emsp; <button class="otazka" id="meta">Odpověď</button>
+        <div class="odpoved-meta">
+          <p>
+            Je to univerzální tag a dává celou skupinu možností, hlavně
+            pomocí metatagů. S jejich pomocí je možné měnit kódování podstránky,
+            přidávat klíčová slova, popis dokumentu a mnoho jiného. Na to, aby
+            prohlížeč chápal, že má co do činění s kódováním UTF-8 (Unicode
+            transformation format) a přidává se daný řádek.
+          </p>
+        </div>
+      </li>
+      <li>
+        <strong> &lt; title &gt;</strong>&emsp; <button class="otazka" id="title">Odpověď</button>
+        <div class="odpoved-title">
+          <p>
+            Určuje hlavičku webové stránky, je to jeden z
+            důležitých prvků určených k řešení mnoha úkolů. V operačním systému
+            Windows je text hlavičky zobrazený v levém horním úhlu okna
+            prohlížeče.
+          </p>
+        </div>
+      </li>
+      <li>
+        <strong> &lt; style &gt;</strong>&emsp; <button class="otazka" id="style">Odpověď</button>
+        <div class="odpoved-style">
+          <p>
+            Tag určerý pro vytvoření stylů naší stranky.
+          </p>
+        </div>
+      </li>
+      <li>
+        <strong> &lt; body &gt;</strong>&emsp; <button class="otazka" id="body">Odpověď</button>
+        <div class="odpoved-body">
+          <p>
+            Určuje hlavičku webové stránky, je to jeden z
+            důležitých prvků určených k řešení mnoha úkolů. V operačním systému
+            Windows je text hlavičky zobrazený v levém horním úhlu okna
+            prohlížeče.
+          </p>
+        </div>
+      </li>
+      <li>
+        <strong> &lt; div &gt;</strong>&emsp; <button class="otazka" id="div">Odpověď</button>
+        <div class="odpoved-div">
+          <p>
+            Sekce v dokumentu, který je stylizován pomocí CSS a lze použít pomocí JavaScriptu.
+          </p>
+          <ul>
+            <li><strong> &lt; div &gt;</strong> <strong> &lt; / div &gt;</strong></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <strong> &lt; h &gt;</strong>&emsp; <button class="otazka" id="h">Odpověď</button>
+        <div class="odpoved-h">
+          <p>
+            Označuje nadpis textu a má až 6 velikostí.
+          </p>
+          <ul>
+            <li><strong> &lt; h1 &gt;</strong> <strong> &lt; / h1 &gt;</strong></li>
+            <li><strong> &lt; h2 &gt;</strong> <strong> &lt; / h2 &gt;</strong></li>
+            <li><strong> &lt; h3 &gt;</strong> <strong> &lt; / h3 &gt;</strong></li>
+            <li><strong> &lt; h4 &gt;</strong> <strong> &lt; / h4 &gt;</strong></li>
+            <li><strong> &lt; h5 &gt;</strong> <strong> &lt; / h5 &gt;</strong></li>
+            <li><strong> &lt; h6 &gt;</strong> <strong> &lt; / h6 &gt;</strong></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <strong> &lt; p &gt;</strong>&emsp; <button class="otazka" id="p">Odpověď</button>
+        <div class="odpoved-p">
+          <p>
+            Označuje odstavec (paragraf) textu.
+          </p>
+          <ul>
+            <li><strong> &lt; p &gt;</strong> <strong> &lt; / p &gt;</strong></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <strong> &lt; a &gt;</strong>&emsp; <button class="otazka" id="a">Odpověď</button>
+        <div class="odpoved-a">
+          <p>
+            Označuje odkaz na jiné stránky nebo na text.
+          </p>
+          <ul>
+            <li><strong> &lt; a href="" &gt;</strong> <strong> &lt; / a &gt;</strong></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  
+  <section class="odstavec">
+    <h2>Základní HTML tagy</h2>
+    <p>
+      Níže uvedené tagy se používají pro formátování textu za pomocí HTML.
+    </p>
+  
+    <section class="odstavec">
+      <h4>&lt;strong&gt;: Zvýrazněný text</h4>
+      <p>
+        Pomocí tagu &lt;strong&gt; můžeme zvýraznit určitou část textu v HTML.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          &lt;p&gt;Tohle je &lt;strong&gt;důležitý&lt;/strong&gt; text.&lt;/p&gt;
+        </div>
+        <div class="col-md-6">
+          <p>Tohle je <strong>důležitý</strong> text.</p>
+        </div>
+      </div>
+    </section>
+    <section class="odstavec">
+      <h4>&lt;b&gt;: Tučný text</h4>
+      <p>
+        Tag &lt;b&gt; se dříve používal k označení tučného textu, ale v HTML5 je preferován tag &lt;strong&gt;.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          &lt;p&gt;Tohle je &lt;b&gt;tučný&lt;/b&gt; text.&lt;/p&gt;
+        </div>
+        <div class="col-md-6">
+          <p>Tohle je <b>tučný</b> text.</p>
+        </div>
+      </div>
+    </section>
+    <section class="odstavec">
+      <h4>&lt;big&gt;: Velký text</h4>
+      <p>
+        Tag &lt;big&gt; zvětší text.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          &lt;p&gt;Tohle je &lt;big&gt;velký&lt;/big&gt; text.&lt;/p&gt;
+        </div>
+        <div class="col-md-6">
+          <p>Tohle je <span style="font-size: larger;">velký</span> text.</p>
+        </div>
+      </div>
+    </section>
+    <section class="odstavec">
+      <h4>&lt;br&gt;: Přerušení řádku</h4>
+      <p>
+        Tag &lt;br&gt; vloží přerušení řádku.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          &lt;p&gt;Tento text bude na prvním řádku.&lt;br&gt; A tento text bude na druhém řádku.&lt;/p&gt;
+        </div>
+        <div class="col-md-6">
+          <p>Tento text bude na prvním řádku.<br> A tento text bude na druhém řádku.</p>
+        </div>
+      </div>
+    </section>
+    <section class="odstavec">
+      <h4>&lt;hr&gt;: Vodorovná čára</h4>
+      <p>
+        Tag &lt;hr&gt; vloží vodorovnou čáru.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          &lt;p&gt;První část textu.&lt;/p&gt;
+          &lt;hr&gt;
+          &lt;p&gt;Druhá část textu.&lt;/p&gt;
+        </div>
+        <div class="col-md-6">
+          <p>První část textu.</p>
+          <hr>
+          <p>Druhá část textu.</p>
+        </div>
+      </div>
+    </section>
+    <section class="odstavec">
+      <h4>&lt;i&gt;: Kurzíva</h4>
+      <p>
+        Tag &lt;i&gt; označuje kurzívu.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          &lt;p&gt;Tohle je &lt;i&gt;kurzivní&lt;/i&gt; text.&lt;/p&gt;
+        </div>
+        <div class="col-md-6">
+          <p>Tohle je <i>kurzívní</i> text.</p>
+        </div>
+      </div>
+    </section>
+    <section class="odstavec">
+      <h4>&lt;small&gt;: Malý text</h4>
+      <p>
+        Tag &lt;small&gt; zmenší text.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          &lt;p&gt;Tohle je &lt;small&gt;malý&lt;/small&gt; text.&lt;/p&gt;
+        </div>
+        <div class="col-md-6">
+          <p>Tohle je <small>malý</small> text.</p>
+        </div>
+      </div>
+    </section>
+    <section class="odstavec">
+      <h4>&lt;u&gt;: Podtržený text</h4>
+      <p>
+        Tag &lt;u&gt; podtrhne text, ale doporučuje se používat CSS pro podtržení textu.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          &lt;p&gt;Tohle je &lt;u&gt;podtržený&lt;/u&gt; text.&lt;/p&gt;
+        </div>
+        <div class="col-md-6">
+          <p>Tohle je <span style="text-decoration: underline;">podtržený</span> text.</p>
+        </div>
+      </div>
+    </section>
+  
+  </section>
+  
+  <div class="odstavec samprace">
+    <h3>Samostaný úkol č.1</h3>
+    <p>
+      Vašim úkolem bude vytvořit stánku, která je pod textem ukázána. Vem te si třeba nějakou stránky z wikipedie
+      a použej te ji na nadpis a text. Odkaz potom vytvořte na stránku wikipedie.
+    </p>
+    <iframe src="/lessons/html-css/ukazky/html-css-1/ukazka2.html" width="100%" height="170" style="border:5;"></iframe>
+  </div>
+  
+  
+  <div class="odstavec">
+    <h1>Základní struktura CSS</h1>
+    <h6><strong>Co to znamená CSS?</strong></h6>
+    <ul>
+      <li>
+        Kaskádové styly tabulek / CSS je to jazyk stylů
+        určujících zobrazení HTML dokumentů
+      </li>
+    </ul>
+    
+    <table>
+      <tr>
+        <td>
+          <p>
+            Tak jelikož jsme si vytvořili náš první web. Musíme mu ještě přidat styl aby naše stránká vypadala lépe.
+            Na to se používá CSS. Ukázka CSS souboru je na obrázky vedle. Změna stylý pomocí CSS můŽe být provedena
+            několika způsoby. A to buď přímo v HTML souboru a nebo jako soubor, který se přiloží k HTML souboru.
+          </p>
+        </td>
+        <td>
+          <img class="myImg" src="/img/html-css/prvni-web-2.avif" alt="První webová stránka"
+            style="width:100%; max-width:300px; height: auto" loading="lazy">
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  
+  
+  <section>
+    <h3>Používání CSS</h3>
+    <p>
+      Stylovaní v HTML za pomocí CSS můžeme docílit různými zpusoby. A to buď přímo v HTML tagu, nebo pomocí třídy či
+      ID HTML tagu.
+    </p>
+    <p>
+      Stylování můžeme použít přímo v HTML dokumentu a nebo v souborem mimo. My se především budeme věnovat jak
+      stylování používat za pomocí třídy v HTML souboru.
+    </p>
+    <div class="code center">
+      <span class="tag">&lt;html <span class="atribut">lang=</span><span class="text">"cs"</span>&gt;</span> <br>
+      <span class="tag">&lt;head&gt;</span> <br>
+      <span class="tag">&nbsp;&nbsp;&lt;meta <span class="atribut">charset=</span><span
+          class="text">"UTF-8"</span>&gt;</span> <br>
+      <span class="tag">&nbsp;&nbsp;&lt;meta <span class="atribut">name=</span><span class="text">"viewport"</span>
+        <span class="atribut">content=</span><span class="text">"width=device-width,
+          initial-scale=1.0"</span>&gt;</span> <br>
+      <span class="tag">&nbsp;&nbsp;&lt;title&gt;</span>Ukázka použití třídy v HTML<span class="tag">&lt;/title&gt;</span>
+      <br>
+      <span class="tag">&nbsp;&nbsp;&lt;style&gt;</span> <br>
+      <span class="text">&nbsp;&nbsp; /* Stylování třídy "header" */</span> <br>
+      <span class="text">&nbsp;&nbsp; <span class="atribut">.header</span> &#123;</span> <br>
+      <span class="text">&nbsp;&nbsp; background-color: #333;</span> <br>
+      <span class="text">&nbsp;&nbsp; color: #fff;</span> <br>
+      <span class="text">&nbsp;&nbsp; padding: 20px;</span> <br>
+      <span class="text">&nbsp;&nbsp; text-align: center;</span> <br>
+      <span class="text">&nbsp;&nbsp; &#125;</span> <br>
+      <span class="tag">&nbsp;&nbsp;&lt;/style&gt;</span> <br>
+      <span class="tag">&lt;/head&gt;</span> <br>
+      <span class="tag">&lt;body&gt;</span> <br>
+      <span class="tag">&nbsp;&nbsp;&lt;!-- Element s použitím třídy "header" --&gt;</span> <br>
+      <span class="tag">&nbsp;&nbsp;&lt;div <span class="atribut">class=</span><span
+          class="text">"header"</span>&gt;</span> <br>
+      <span class="tag">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;</span>Vítejte na našem webu!<span
+        class="tag">&lt;/h1&gt;</span> <br>
+      <span class="tag">&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;</span>Toto je ukázka použití třídy v HTML.<span
+        class="tag">&lt;/p&gt;</span> <br>
+      <span class="tag">&nbsp;&nbsp;&lt;/div&gt;</span> <br>
+      <span class="tag">&lt;/body&gt;</span> <br>
+      <span class="tag">&lt;/html&gt;</span> <br>
+    </div>
+  
+    <section class="odstavec">
+      <section class="odstavec">
+        <h2>Tag &lt;span&gt;</h2>
+        <h4>Ukázka tagu na příkladě barevný text</h4>
+        <p>
+          Tag &lt;span&gt; je univerzální inline kontejner, který se často používá k úpravě textu pomocí CSS.
+        </p>
+        <div class="row">
+          <div class="col-md-6 highlight">
+            &lt;p&gt;Tohle je &lt;span style="color: red;"&gt;barevný&lt;/span&gt; text.&lt;/p&gt;
+          </div>
+          <div class="col-md-6 highlight">
+            <p>Tohle je <span style="color: red;">barevný</span> text.</p>
+          </div>
+        </div>
+      </section>
+      <h3><strong>Nyní si ukážeme pár atributů style</strong></h3>
+      <div style="display: flex; flex-direction: row;">
+        <!-- Zdrojový kód -->
+        <div style="flex: 1;">
+          <table style="border-collapse: separate; border-spacing: 20px;">
+            <tr>
+              <th>Vlastnost</th>
+              <th>Zdrojový kód</th>
+            </tr>
+            <tr>
+              <td>Změna barvy pozadí</td>
+              <td><code>background-color: yellow;</code></td>
+            </tr>
+            <tr>
+              <td>Změna barvy písma</td>
+              <td><code>color: blue;</code></td>
+            </tr>
+            <tr>
+              <td>Změna stylu textu</td>
+              <td><code>font-family: Arial, sans-serif;</code></td>
+            </tr>
+            <tr>
+              <td>Změna velikosti textu</td>
+              <td><code>font-size: 20px;</code></td>
+            </tr>
+            <tr>
+              <td>Tučnost textu</td>
+              <td><code>font-weight: bold;</code></td>
+            </tr>
+            <tr>
+              <td>Zarovnání textu</td>
+              <td><code>text-align: center;</code></td>
+            </tr>
+            <tr>
+              <td>Odstranění stylu u odkazu</td>
+              <td><code>text-decoration: none;</code></td>
+            </tr>
+            <tr>
+              <td>Vytvoření místa kolem textu</td>
+              <td><code>margin: 10px;</code></td>
+            </tr>
+            <tr>
+              <td>Vytvoření prostoru kolem obsahu</td>
+              <td><code>padding: 10px;</code></td>
+            </tr>
+            <tr>
+              <td>Šířka a výška</td>
+              <td><code>width: 100px; height: 50px;</code></td>
+            </tr>
+            <tr>
+              <td>Vytvoři box kolem textu</td>
+              <td><code>border-radius: 5px; border: 1px solid black; padding: 5px;</code></td>
+            </tr>
+            <tr>
+              <td>Odsazení textu</td>
+              <td><code>text-indent: 20px;</code></td>
+            </tr>
+            <tr>
+              <td>Text se stínem</td>
+              <td><code>text-shadow: 2px 2px 4px #000000;</code></td>
+            </tr>
+            <tr>
+              <td>Podtržený text</td>
+              <td><code>text-decoration: underline;</code></td>
+            </tr>
+          </table>
+        </div>
+        <!-- Výsledek -->
+        <div style="flex: 1;">
+          <table style="border-collapse: separate; border-spacing: 20px;">
+            <tr>
+              <th>Vlastnost</th>
+              <th>Výsledek</th>
+            </tr>
+            <tr>
+              <td>Změna barvy pozadí</td>
+              <td style="background-color: yellow;">Background color</td>
+            </tr>
+            <tr>
+              <td>Změna barvy písma</td>
+              <td style="color: blue;">Colored text</td>
+            </tr>
+            <tr>
+              <td>Změna stylu textu</td>
+              <td style="font-family: Arial, sans-serif;">Font family</td>
+            </tr>
+            <tr>
+              <td>Změna velikosti textu</td>
+              <td style="font-size: 20px;">Font size</td>
+            </tr>
+            <tr>
+              <td>Tučnost textu</td>
+              <td style="font-weight: bold;">Bold text</td>
+            </tr>
+            <tr>
+              <td>Zarovnání textu</td>
+              <td style="text-align: center;">Centered text</td>
+            </tr>
+            <tr>
+              <td>Odstranění stylu u odkazu</td>
+              <td style="text-decoration: none;">Link without underline</td>
+            </tr>
+            <tr>
+              <td>Vytvoření místa kolem textu</td>
+              <td style="margin: 10px;">Margin around text</td>
+            </tr>
+            <tr>
+              <td>Vytvoření prostoru kolem obsahu</td>
+              <td style="padding: 10px;">Padding around content</td>
+            </tr>
+            <tr>
+              <td>Šířka a výška</td>
+              <td style="width: 100px; height: 50px; display: inline-block;">Width and height</td>
+            </tr>
+            <tr>
+              <td>Vytvoři box kolem textu</td>
+              <td style="border-radius: 5px; border: 1px solid black; padding: 5px;">Text with border radius</td>
+            </tr>
+            <tr>
+              <td>Odsazení textu</td>
+              <td style="text-indent: 20px;">Indented text</td>
+            </tr>
+            <tr>
+              <td>Text se stínem</td>
+              <td style="text-shadow: 2px 2px 4px #000000;">Text se stínem</td>
+            </tr>
+            <tr>
+              <td>Podtržený text</td>
+              <td style="text-decoration: underline;">Underlined text</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+  
+  
+  
+    <div class="odstavec samprace">
+      <h3>Samostaný úkol č.2</h3>
+      <p>Vašim úkolem bude napodobit tuhle stránku. K vytvoření použijte stránku z předhozí samostané práce.</p>
+      <iframe src="/lessons/html-css/ukazky/html-css-1/ukazka1.html" width="100%" height="409" style="border:5;"></iframe>
+    </div>
+  
+    <div class="odstavec">
+      <h2>Domácí úkol</h2>
+      <p>
+        Vašim úkolem vytvořit si webovou stránku, kde umístíte text básničky. Stránku naformátuje te tak,
+        aby vypadala jako stránka v knížce s básničkou.
+        Jakmile budete to mít hotové odevzdejte do <a
+          href="https://mystat.itstep.org/cs/auth/login/index?returnUrl=%2Fcs%2Fmain%2Fdashboard%2Fpage%2Findex">
+          <strong>Mystat</strong>
+        </a>
+      </p>
+      <p>
+        Pro rozdělení textu v tagu <strong> &lt; p &gt;</strong> <strong> &lt; / p &gt;</strong> použijte tag <strong>
+          &lt; br &gt;</strong>.
+      </p>
+      <div class="row">
+        <h5>Text ke stažení: </h5>
+        <div style="padding-left: 50px;">
+          <a href="/download/html-css/ukol1-basnicka.txt" download="ukol1-basnicka.txt"><button
+              class="btn btn-primary">Stáhnout soubor</button></a>
+        </div>
+      </div>
+      <h5 style="padding-top: 50px;">Nechci aby jste použili jaké koliv AI na generování tohoto úkol.</h5>
+    </div>
+  
+    <div class="odstavec">
+      <table>
+        <tr>
+          <td>
+            <h5>Zadání úkolu</h5>
+          </td>
+          <td style="padding-left: 50px;">
+            <button onClick='download("/download/html-css/html-css-1.pdf")' class="btn btn-primary"
+              style="font-weight: bold;">
+              stažení</button>
+          </td>
+        </tr>
+      </table>
+      <h5><a href="/download/pdfobraze.png" download>Cover</a></h5>
+    </div>
+  </section>

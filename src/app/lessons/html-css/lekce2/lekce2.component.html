@@ -1,0 +1,306 @@
+<div>
+    <table class="moveAndTime">
+      <tr>
+        <td>
+          <button id="left" class="btn btn-primary"
+            onclick="location.href = 'audacity/lekce1';">Předchozí lekce</button>
+          <button id="right" class="btn btn-primary"
+            onclick="location.href = 'audacity/lekce3';">Následují lekce</button>
+        </td>
+        <td>
+          <p class="nav-link" id="cas-text"><span id="cas"></span></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <h1>Lekce č. 2. Seznamy, Obrázky, Tabulky</h1>
+      <p>
+        V této lekci si vysvětlíme malou část možností při tvorbě webových stránek. Touto oblastí je právě pár základních
+        funkcí.
+        Na vytvoření webových stránek můžeme použít strašnou spoustu nějakých technologii. V této
+        lekci se koukmeme právě na tu nejzákladnější a to je HTML a spolu s tím i CSS.
+      </p>
+      <p>
+        Nejprve si představíme Seznamy poté Tabulky a jako naposled koukneme na Obrázky. Ukážeme si vše jak se používá.
+        Na konci si každý vyzkouší sám oři plnení samostatné práce.
+      </p>
+  
+  
+      <div class="odstavec">
+        <h2>Seznam</h2>
+        <div style="padding-bottom: 30px;">
+          <button class="otazka" id="div">Co je to ?</button>
+        </div>
+  
+        <div class="odpoved-div" style="font-weight: bolder;">
+          <p>
+            je to soubor nabídek, které začínají od čísla nebo značky (například tečky nebo odrážky).
+            Umožňuje uspořádat různé informace a prezentovat je způsobem, který je pro uživatele nohem pohodlnější.
+          </p>
+        </div>
+        <p>
+          Seznamy jsou tvořené v html za pomoci kontejneru <strong>&lt;ul&gt;</strong> a do nej se pak vkladaji prvky s
+          tagem <strong>&lt;ol&gt;</strong>
+          pro seznam bez značeni a nebo <strong>&lt;li&gt;</strong> pro seznam s kolečky.
+        </p>
+      </div>
+  
+  
+      <div class="odstavec">
+        <h4>Seznam s odrážky</h4>
+        <p>
+          K vytvoření seznamu s odrážky budem potřebovat tag s názvem <strong> &lt;ul&gt;&lt;/ul&gt;</strong>, do něj
+          vložíme jednotlivé
+          body seznamu, a každý řádek se bude neacházet mezi tagy <strong>&lt;li&gt; text &lt;/li&gt;</strong>.
+        </p>
+        <table class="center">
+          <tr>
+            <td>
+              <span class="code">
+                <span class="tag">&lt;ul&gt;</span> <br>
+                <span class="tag1">&lt;li&gt;</span>Width<span class="tag">&lt;/li&gt;</span> <br>
+                <span class="tag1">&lt;li&gt;</span>Height<span class="tag">&lt;/li&gt;</span> <br>
+                <span class="tag1">&lt;li&gt;</span>SRC<span class="tag">&lt;/li&gt;</span> <br>
+                <span class="tag1">&lt;li&gt;</span>ALT<span class="tag">&lt;/li&gt;</span> <br>
+                <span class="tag1">&lt;li&gt;</span>Title<span class="tag">&lt;/li&gt;</span> <br>
+                <span class="tag">&lt;/ul&gt;</span> <br>
+              </span>
+            </td>
+            <td class="code">
+              <ul>
+                <li>Width</li>
+                <li>Height</li>
+                <li>SRC</li>
+                <li>ALT</li>
+                <li>Title</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+  
+        <h4>Seznam s čísli</h4>
+        <p>
+          K vytvoření seznamu s čísli budem potřebovat tag <strong> &lt;ol&gt;&lt;/ol&gt;</strong>, do něj vložíme
+          jednotlivé
+          body seznamu, a každý řádek se bude neacházet mezi tagy <strong>&lt;li&gt; text &lt;/li&gt;</strong>.
+        </p>
+        <table class="center">
+          <tr>
+            <td>
+              <span class="code">
+                <span class="tag">&lt;ol&gt;</span> <br>
+                <span class="tag1">&lt;li&gt;</span>Width<span class="tag">&lt;/li&gt;</span> <br>
+                <span class="tag1">&lt;li&gt;</span>Height<span class="tag">&lt;/li&gt;</span> <br>
+                <span class="tag1">&lt;li&gt;</span>SRC<span class="tag">&lt;/li&gt;</span> <br>
+                <span class="tag1">&lt;li&gt;</span>ALT<span class="tag">&lt;/li&gt;</span> <br>
+                <span class="tag1">&lt;li&gt;</span>Title<span class="tag">&lt;/li&gt;</span> <br>
+                <span class="tag">&lt;/ol&gt;</span> <br>
+              </span>
+            </td>
+            <td class="code">
+              <ol>
+                <li>Width</li>
+                <li>Height</li>
+                <li>SRC</li>
+                <li>ALT</li>
+                <li>Title</li>
+              </ol>
+            </td>
+          </tr>
+        </table>
+  
+      </div>
+  
+  
+      <div class="odstavec">
+        <h2>Tabulky</h2>
+        <p>Pro pridani tabulky je nezbytne znat tagy <strong>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;&lt;/td&gt;</strong></p>
+  
+        <ul class="odrazky-podtext">
+          <li>&lt;table&gt;</li>
+          <p>Použiva se pro začátek a konec tabulky</p>
+          <li>&lt;tr&gt;</li>
+          <p>Table row neboli řádek tabulky, začína a končí řádek tabulky</p>
+          <li>&lt;td&gt;</li>
+          <p>Table data neboli tabulkové údaje, začíná a ukončuje buňku řádku tabulky</p>
+          <li>&lt;th&gt;</li>
+          <p>Table header neboli tabulkové hlavicka, začíná a ukončuje buňku řádku hlavičky tabulky</p>
+          <li>&lt;caption&gt;</li>
+          <p>Popisek tabulky</p>
+          <li>&lt;thead&gt;</li>
+          <p>Uručeje tabulku hlavičky</p>
+          <li>&lt;tbody&gt;</li>
+          <p>Uručeje tabulku těla</p>
+        </ul>
+        <h4>Ukázka použití</h4>
+        <table class="stred">
+          <tr>
+            <td class="code">
+              <span class="tag">&lt;table&gt;</span> <br>
+              <span class="tag1">&lt;/caption&gt;</span>Měsícly úspory<span class="tag">&lt;/caption&gt;</span> <br>
+              <span class="tag2">&lt;thead&gt;</span> <br>
+              <span class="tag3">&lt;tr&gt;</span> <br>
+              <span class="tag4">&lt;th&gt;</span>Měsíc<span class="tag">&lt;/th&gt;</span> <br>
+              <span class="tag4">&lt;th&gt;</span>2023<span class="tag">&lt;/th&gt;</span> <br>
+              <span class="tag4">&lt;th&gt;</span>2024<span class="tag">&lt;/th&gt;</span> <br>
+              <span class="tag3">&lt;/tr&gt;</span> <br>
+              <span class="tag2">&lt;/thead&gt;</span> <br>
+              <span class="tag2">&lt;tbody&gt;</span> <br>
+              <span class="tag3">&lt;tr&gt;</span> <br>
+              <span class="tag4">&lt;td&gt;</span>Leden<span class="tag">&lt;/td&gt;</span> <br>
+              <span class="tag4">&lt;td&gt;</span>$100<span class="tag">&lt;/td&gt;</span> <br>
+              <span class="tag4">&lt;td&gt;</span>$100<span class="tag">&lt;/td&gt;</span> <br>
+              <span class="tag3">&lt;/tr&gt;</span> <br>
+              <span class="tag3">&lt;tr&gt;</span> <br>
+              <span class="tag4">&lt;td&gt;</span>Únor<span class="tag">&lt;/td&gt;</span> <br>
+              <span class="tag4">&lt;td&gt;</span>$80<span class="tag">&lt;/td&gt;</span> <br>
+              <span class="tag4">&lt;td&gt;</span>$100<span class="tag">&lt;/td&gt;</span> <br>
+              <span class="tag3">&lt;/tr&gt;</span> <br>
+              <span class="tag2">&lt;/tbody&gt;</span> <br>
+              <span class="tag2">&lt;tfoot&gt;</span> <br>
+              <span class="tag3">&lt;tr&gt;</span> <br>
+              <span class="tag4">&lt;td &gt;</span>Součet<span class="tag">&lt;/td&gt;</span> <br>
+              <span class="tag4">&lt;td &gt;</span>$180<span class="tag">&lt;/td&gt;</span> <br>
+              <span class="tag3">&lt;/tr &gt;</span> <br>
+              <span class="tag2">&lt;/tfoot &gt;</span> <br>
+              <span class="tag">&lt;/table &gt;</span> <br>
+            </td>
+            <td style="padding-left: 20px;">
+              <table class="code">
+                <caption>Měsíční úspory</caption>
+                <thead>
+                  <tr>
+                    <th>Měsíc</th>
+                    <th style="padding-left: 20px;">2023</th>
+                    <th style="padding-left: 20px;">2024</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Leden</td>
+                    <td style="padding-left: 20px;">$100</td>
+                    <td style="padding-left: 20px;">$100</td>
+                  </tr>
+                  <tr>
+                    <td>Únor</td>
+                    <td style="padding-left: 20px;">$80</td>
+                    <td style="padding-left: 20px;">$100</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>Součet</td>
+                    <td style="padding-left: 20px;">$180</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </td>
+          </tr>
+        </table>
+  
+  
+        <h4 style="padding-top: 20px">Stylovaní tabulek</h4>
+        <ul class="odrazky-podtext">
+          <li>Border</li>
+          <p>používa se pro specifikaci tlouštky rámu kolem tabulky</p>
+          <p>Ukázka kod a vyzualizace</p>
+          <li>Align</li>
+          <p>Vyrovnani obsahu cele tabulky v jednotlivých buňkách</p>
+          <li>Valign</li>
+          <p>Zarovnani vertikalní v buňce</p>
+          <li>Colspan</li>
+          <p>Kolik sloupců bude zabírat jedna buňka</p>
+          <li>Rowspan</li>
+          <p>Kolik sloupců bude zabírat jedna buňka</p>
+        </ul>
+      </div>
+  
+  
+      <div class="odstavec">
+        <h2>Obrázku</h2>
+        <p>
+          Pro přidaní obrázku nejprve potřebujeme si připravit soubor na požadovanou velikost. A poté ho přidáme za pomocí
+          tagu <strong>&lt;img&gt;</strong> do našeho html dokumentu
+        </p>
+        <h5>URL adresa</h5>
+        <p>Je to cesta k souboru, muže být jako odkaz na internet nebo jako odkaz na soubor ve složce</p>
+        <h5>Atributy</h5>
+        <p>
+          Níže je seznam atributů, které můžeme nastavovat u obrázku.
+        </p>
+        <ul style="font-weight: bold;">
+          <li>Width</li>
+          <li>Height</li>
+          <li>SRC</li>
+          <li>ALT</li>
+          <li>Title</li>
+        </ul>
+        <h4>Důležite informace:</h4>
+        <ul>
+          <li>Čím menší obrazek tím se rychleji zobrazi</li>
+          <li>Velikost obrazku upravujeme po šířce neboli (widht)</li>
+        </ul>
+        <table class="mid">
+          <tr>
+            <td class="code">
+              <span> &lt; img src="/img/logo.jpg" alt="logo stepit" &gt; </span>
+            </td>
+            <td class="code">
+              <img src="/img/logo.jpg" alt="logo stepit">
+            </td>
+          </tr>
+        </table>
+      </div>
+  
+      <div class="odstavec">
+        <h2>Domácí úkol</h2>
+        <p>
+          Vašim úkolem je vytvořit jednoduchou webovou stránku,
+          která bude popisovat tvůj oblíbený film nebo hru.
+          Stránka by měla obsahovat vše co jsme si v dnešní lekci ukázali.
+          Jakmile budete to mít hotové odevzdejte do <a
+            href="https://mystat.itstep.org/cs/auth/login/index?returnUrl=%2Fcs%2Fmain%2Fdashboard%2Fpage%2Findex">
+            <strong>Mystat</strong>.
+          </a>
+        </p>
+        <h5>Nároky na webovou stránku</h5>
+        <ul>
+          <li><strong>Název a úvodní popis</strong></li>
+          <li><strong>Seznam postav</strong></li>
+          <li><strong>Obrázky postav</strong></li>
+          <li>
+            <strong>Tabulka s informacemi třeba:</strong>
+            <ul>
+              <li>Rozpočet</li>
+              <li>Tržby</li>
+              <li>Hodnocení</li>
+              <li>Délka</li>
+              <li>Režisér</li>
+              <li>Scénárista</li>
+              <li>Datum vydání</li>
+              <li>Žánr</li>
+              <li>Hlavní herecké obsazení</li>
+              <li>Jazyk</li>
+              <li>Země původu</li>
+            </ul>
+          </li>
+        </ul>
+        <h5 style="padding-top: 50px;">Nechci aby jste použili jaké koliv AI na generování tohoto úkol.</h5>
+      </div>
+  
+      <div class="odstavec">
+        <table>
+          <tr>
+            <td>
+              <h5>Zadání úkolu</h5>
+            </td>
+            <td style="padding-left: 50px;">
+              <button onClick='download("/download/html-css/html-css-2.pdf")' class="btn btn-primary"
+                style="font-weight: bold;">
+                stažení</button>
+            </td>
+          </tr>
+        </table>
+        <h5><a href="/download/pdfobraze.png" download>Cover</a></h5>
+      </div>

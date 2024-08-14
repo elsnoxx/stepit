@@ -1,5 +1,5 @@
-<h1 class="mt-5" style="margin-bottom: 64px; ">HTML a CSS</h1>
-<p style="margin-bottom: 64px; ">
+<h1 class="mt-5">HTML a CSS</h1>
+<p style="margin-bottom: 20px; ">
     Pro vytváření našich projeků budeme používat vývojové prostředí
     <a href="https://code.visualstudio.com/download">Visual Studio Code</a>.
     Návod navytvoření si vyvojového prostředí <a href="/lessons/html-css/html-css-vsc.html">zde</a>.
@@ -12,120 +12,103 @@
     by jste měli takový web vytvořit.
 </p>
 
-<section class="odstavec">
-    <h4>Ukázkové práce</h4>
-    <p>
-        Níže budou ke stažení ukázkové kódy.
-    </p>
-    <ul>
-        <li><a href="/download/html-css/ukazky/html-css/JA-WED-O-10-22.zip" download
-                class="btn btn-primary">JA-WED-O-10-22</a></li>
-    </ul>
-</section>
-
 <div class="mid">
 
     <!-- src/app/lessons/html-css/html-css.lessons.component.html -->
-<div class="lessons-container">
-    <div class="lesson-card" *ngFor="let lesson of lessons">
-      <a [href]="lesson.link" class="lesson-title">
-        <h3>{{ lesson.title }}</h3>
-      </a>
-      <div class="lesson-content">
-        <div class="lesson-description">
-          <p>{{ lesson.description }}</p>
-        </div>
-        <div class="lesson-action">
-          <a [href]="lesson.link" class="btn btn-primary">Přejít na lekci</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
-    <section>
-        <a href="/lessons/html-css/projekt.html">
-            <h3>Projekt</h3>
-        </a>
-        <div class="row">
-            <div class="col-sm-10">
-                <p>
-                    V dalších lekcích budete vypracovávat závěrečný projekt a prezentaci k němu. Veškeré materiály
-                    dostanete
-                    na
-                    lekci.
-                    K tvorbě projektu budou i potřebné znalosti z lekcí, které jsme jič probrali.
-                    V případě nejasností se mi <a href="/contact.html">ozvete</a>.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <a href="/lessons/html-css/projekt.html" class="btn btn-primary">Projekt</a>
-            </div>
-        </div>
-    </section>
-
-
-    <a href="/prezentace.html">
-        <h3>Prezentace</h3>
-    </a>
-    <ul style="margin-bottom: 64px; ">
-        <p>
-            V dalších lekcích budete vypracovávat závěrečný projekt a prezentaci k němu. Veškeré materiály dostanete na
-            lekci.
-            K tvorbě projektu budou i potřebné znalosti z lekcí, které jsme jič probrali.
-            V případě nejasností se mi <a href="/contact">ozvete</a>.
-        </p>
-        <p>Podrobný popis <a href="/prezentace.html">zde</a>.</p>
-    </ul>
-
-
-
-    <section>
-        <a href="/lessons/html-css/hosting.html">
-            <h3>Publikování webu </h3>
-        </a>
-        <div class="row">
-            <div class="col-sm-8">
-                <p>
-                    Zde je maláý článek, popisující co je to doména. A také jak zpřístupnit své webové stránky světu.
-                    V případě nejasností se mi <a href="/contact">ozvete</a>.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <a href="/lessons/html-css/hosting.html" class="btn btn-primary">Publikování webu</a>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <a href="/lessons/html-css/test-znalosti.html">
-            <h3>Otestování znalostí</h3>
-        </a>
-        <div class="row">
-            <div class="col-sm-8">
-                <p>
-                    Zde je maláý článek, popisující co je to doména. A také jak zpřístupnit své webové stránky světu.
-                    V případě nejasností se mi <a href="/contact">ozvete</a>.
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <a href="/lessons/html-css/test-znalosti.html" class="btn btn-primary">Publikování webu</a>
-            </div>
-        </div>
-    </section>
-
-
-    <a href="/lessons/html-css/hodnoceni.html">
-        <h3>Hodnocení lekce</h3>
-    </a>
-    <div class="row">
-        <div class="col-sm-8">
+    <section class="lessons-section">
+        <header>
+            <h2>Seznam lekcí na téma HTML a CSS</h2>
             <p>
-                Prosím ohodnoťte lekci v níže přidaném formuláři.
+                Tento seznam lekcí vám pomůže postupně se seznámit s HTML a CSS. Každá lekce je navržena tak, aby
+                pokryla klíčové koncepty a dovednosti potřebné pro tvorbu moderních webových stránek. 
+                Klikněte na nadpis lekce pro její otevření a přečtěte si podrobný popis obsahu, který vás čeká.
             </p>
+        </header>
+    
+        <div class="lessons-container">
+            <div class="lesson-card" *ngFor="let lesson of lessons">
+                <div class="lesson-header">
+                    <a [href]="lesson.link" class="lesson-title">
+                        <h3>{{ lesson.title }}</h3>
+                    </a>
+                </div>
+                <div class="lesson-content">
+                    <div class="lesson-description">
+                        <p>{{ lesson.description }}</p>
+                    </div>
+                    <div class="lesson-action">
+                        <a [href]="lesson.link" class="btn btn-primary">Přejít na lekci</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-4">
-            <a href="/lessons/html-css/hodnoceni.html" class="btn btn-primary">Formulář hodnocení</a>
+    </section>
+    
+
+    <div class="project-card">
+        <div class="project-header">
+            <h2 class="project-title">{{ project.title }}</h2>
+        </div>
+        <div class="project-body">
+            <h4 class="card-title">Zadání projektu - Webové stránky</h4>
+            <p>{{ project.description }}</p>
+
+            <div class="mt-auto text-end">
+                <a [href]="project.link" class="btn btn-secondary">{{ project.buttonText }}</a>
+            </div>
         </div>
     </div>
+
+    <div class="project-card">
+        <div class="project-header">
+            <h2 class="project-title">{{ finalPresentation.title }}</h2>
+        </div>
+        <div class="project-body">
+            <p>{{ finalPresentation.description }}</p>
+
+            <div class="mt-auto text-end">
+                <a [href]="finalPresentation.link" class="btn btn-secondary">{{ finalPresentation.buttonText }}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="rating-card card  mb-4">
+        <div class="card-header bg-info text-white">
+            <h2>{{ rating.title }}</h2>
+        </div>
+        <div class="card-body">
+            <p class="card-text">{{ rating.description }}</p>
+            <a [href]="rating.link" class="btn btn-info mt-3">{{ rating.buttonText }}</a>
+        </div>
+    </div>
+
+
+    <section class="additional-lessons-section">
+        <header>
+            <h2>Doplňkové materiály a ukázkové práce</h2>
+            <p>
+                Tato sekce obsahuje další materiály a ukázky, které vám pomohou lépe pochopit a procvičit si naučené dovednosti.
+                Klikněte na jednotlivé karty pro zobrazení detailů a stažení potřebných souborů.
+            </p>
+        </header>
+    
+        <div class="lessons-container">
+            <div class="lesson-card" *ngFor="let lesson of additional">
+                <div class="lesson-header">
+                    <a [href]="lesson.link" class="lesson-title">
+                        <h3>{{ lesson.title }}</h3>
+                    </a>
+                </div>
+                <div class="lesson-content">
+                    <div class="lesson-description">
+                        <p>{{ lesson.description }}</p>
+                    </div>
+                    <div class="lesson-action">
+                        <a [href]="lesson.link" class="btn btn-primary">Přejít na lekci</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 </div>
