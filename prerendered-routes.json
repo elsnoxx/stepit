@@ -1,0 +1,26 @@
+{
+  "routes": [
+    "/",
+    "/about",
+    "/audacity",
+    "/audacity/lekce1",
+    "/audacity/lekce2",
+    "/audacity/lekce3",
+    "/audacity/lekce4",
+    "/construct",
+    "/contact",
+    "/html-css",
+    "/html-css/hodnoceni",
+    "/html-css/lekce1",
+    "/html-css/lekce2",
+    "/html-css/lekce3",
+    "/html-css/lekce4",
+    "/html-css/lekce5",
+    "/html-css/projekt",
+    "/html-css/publikovani",
+    "/html-css/test-znalosti",
+    "/html-css/ukazkove-prace",
+    "/html-css/vsc",
+    "/mystat"
+  ]
+}
